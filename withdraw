@@ -1,0 +1,7 @@
+(define new-withdraw
+  (let ((blance 100))
+  (lambda (amount)
+    (if (>= blance amount)
+        (begin (set! blance (- blance amount))
+               blance)
+        'falied))))

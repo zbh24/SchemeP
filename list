@@ -1,0 +1,38 @@
+
+;---------------------------------------------
+(list 3 4)
+(list 'a 'b)
+
+
+;symbol data
+'(list a b c)
+'(a b c)
+(car '(a b c))
+(cdr '(a b c))
+
+;2.53
+(list 'a 'b 'c)
+(list (list 'zbh))
+(cdr '((x1 x2) (y1 y2)))
+
+;;;2.55
+(car ''abc)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

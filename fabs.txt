@@ -1,0 +1,15 @@
+;fabs
+(define (fabs x)
+  (if (< x 2) 1
+      (+ (fabs (- x 1))
+         (fabs (- x 2)))))
+
+;fabs1 fabs(n-1) + fabs(n -2)
+
+(define (fabs1 n)
+  (subfabs 1 1 n))
+  
+(define (subfabs a b count)
+  (if (= count 0)
+      b
+      (subfabs (+ a b) a (- count 1))))

@@ -1,0 +1,15 @@
+(define (JieCheng x) 
+  (cond ((= x 1) 1)
+        ((> x 1) (* x (JieCheng (- x 1))))))
+
+
+/////////////////////////////////////////////////////
+
+(define (JieChengDiDai x)
+  (subJieCheng 1 1 x))
+
+(define (subJieCheng value count N)
+  (if (> count N) value
+      (subJieCheng (* value count) (+ count 1) N)))
+
+;;;;By emacs.txt

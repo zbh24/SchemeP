@@ -1,0 +1,8 @@
+(define (add) 
+  (lambda (a b) (+ a b)))
+
+(define (sub)
+  (lambda (a b) (- a b)))
+
+(define (zbh f a b)
+  ((f) a b))

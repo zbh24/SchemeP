@@ -1,0 +1,18 @@
+;;;;;
+(define (f n)
+  (if (< n 3) n
+      (+ (f (- n 1))
+         (* 2
+            (f (- n 2)))
+         (* 3
+            (f (- n 3))))))
+
+
+(define (f1 n)
+      (subf 2 1 0 3 n))
+
+(define (subf a b c count n)
+  (if (> count n) a
+      (subf (+ a 
+               (* 2 b) 
+               (* 3 c)) a b (+ count 1) n)))
